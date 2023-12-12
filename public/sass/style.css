@@ -1,0 +1,12 @@
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Poppins url(https://fonts.google.com/specimen/Poppins);
+  font-weight: 600;
+}
+
+body {
+  background-image: url("../img/bg-hero-mobile.svg");
+}/*# sourceMappingURL=style.css.map */

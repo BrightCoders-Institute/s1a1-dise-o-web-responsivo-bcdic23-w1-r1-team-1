@@ -1,0 +1,17 @@
+//! Fonts
+body{
+    font-size: 18px;
+}
+//! headers 
+%stylesH{
+    font-family: Poppins url(https://fonts.google.com/specimen/Poppins);
+    font-weight: 600;
+}
+h1{
+   @extend %stylesH;
+}
+
+
+
+
+
