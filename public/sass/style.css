@@ -1,9 +1,11 @@
 body {
   font-size: 18px;
+  font-family: "Open Sans" url(https://fonts.google.com/specimen/Open+Sans);
+  font-weight: 400;
 }
 
-h1 {
-  font-family: Poppins url(https://fonts.google.com/specimen/Poppins);
+h1, h2, h3, h4 {
+  font-family: "Poppins" url(https://fonts.google.com/specimen/Poppins);
   font-weight: 600;
 }
 
