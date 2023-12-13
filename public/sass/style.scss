@@ -6,7 +6,6 @@
 $bg-mobile: url('../../img/bg-hero-mobile.svg');
 
 header {
-    margin: 0px;
     background-image: $bg-mobile;
 }
 
@@ -16,6 +15,7 @@ header {
 
     img {
         height: 20px;
+        width: auto;
     }
 
     button {

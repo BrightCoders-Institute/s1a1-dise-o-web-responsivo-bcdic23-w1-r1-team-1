@@ -12,12 +12,15 @@ h1, h2, h3, h4 {
   color: hsl(192, 100%, 9%);
 }
 
-body {
-  margin: 16px;
+header, main, footer {
+  padding: 16px;
+}
+
+img {
+  width: 100%;
 }
 
 header {
-  margin: 0px;
   background-image: url("../../img/bg-hero-mobile.svg");
 }
 
@@ -29,6 +32,7 @@ header {
 }
 .nav img {
   height: 20px;
+  width: auto;
 }
 .nav button {
   border-radius: 2rem;
