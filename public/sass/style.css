@@ -1,14 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
 body {
   font-size: 18px;
-  font-family: "Open Sans" url(https://fonts.google.com/specimen/Open+Sans);
+  font-family: "Open Sans";
   font-weight: 400;
+  color: hsl(192, 100%, 9%);
 }
 
 h1, h2, h3, h4 {
-  font-family: "Poppins" url(https://fonts.google.com/specimen/Poppins);
+  font-family: "Poppins";
   font-weight: 600;
+  color: hsl(192, 100%, 9%);
+}
+
+body {
+  margin: 16px;
 }
 
 header {
+  margin: 0px;
   background-image: url("../../img/bg-hero-mobile.svg");
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.nav img {
+  height: 20px;
+}
+.nav button {
+  border-radius: 2rem;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 120px;
+  height: 25px;
+  font-weight: 700;
+}
+
+.landing {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.landing h2, .landing p {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
