@@ -1,9 +1,10 @@
 @use 'colors';
 @use 'fonts';
 
-$bg-mobile: '../img/bg-hero-mobile.svg';
+$bg-mobile: url('../../img/bg-hero-mobile.svg');
 
-body {
-    background-image: url($bg-mobile);
+header {
+    background-image: $bg-mobile;
+
 }
 
