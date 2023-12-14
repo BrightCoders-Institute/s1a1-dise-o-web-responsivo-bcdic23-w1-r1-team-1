@@ -20,6 +20,15 @@ img {
   width: 100%;
 }
 
+main {
+  margin: 16px;
+}
+
+footer img {
+  width: 24px;
+  height: auto;
+}
+
 header {
   background-image: url("../../img/bg-hero-mobile.svg");
   background-color: #edfbfe;
@@ -79,4 +88,45 @@ header {
   justify-content: center;
   color: hsl(193, 100%, 96%);
   margin-bottom: 4rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.card img {
+  margin-bottom: 2rem;
+}
+.card p {
+  color: hsl(208, 11%, 55%);
+}
+.card h3 {
+  font-size: large;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+}
+footer .logo img {
+  width: 50%;
+  filter: brightness(200);
+}
+footer p {
+  color: hsl(193, 100%, 96%);
+  margin-top: 0px;
+  margin-left: 16px;
+}
+footer .icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
