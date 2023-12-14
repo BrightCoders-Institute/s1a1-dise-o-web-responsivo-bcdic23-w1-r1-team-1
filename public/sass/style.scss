@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'colors' as color;
 @use 'fonts';
 @use 'resets';
 @use 'mixin';
@@ -7,6 +7,7 @@ $bg-mobile: url('../../img/bg-hero-mobile.svg');
 
 header {
     background-image: $bg-mobile;
+    background-color: #edfbfe
 }
 
 .nav {
@@ -18,12 +19,16 @@ header {
         width: auto;
     }
 
-    button {
-        @include mixin.btn(white);
+    a {
+        @include mixin.btn(white, 120px, 30px, 14px);
+        
+        color: black;
     }
 }
 
 .landing {
+    @include mixin.flex(center);
+    flex-direction: column;
     margin-left:2rem;
     margin-right:2rem;
 
@@ -31,6 +36,12 @@ header {
         text-align: center;
         line-height: 1.5;
         margin-bottom: 2rem;
+    }
+
+    a {
+        @include mixin.btn(color.$pink, 90%, 45px, 16px);
+        color: color.$paleCyan;
+        margin-bottom: 4rem;
     }
 }
 
