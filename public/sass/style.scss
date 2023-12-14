@@ -66,26 +66,54 @@ header {
 }
 
 footer{
-    .logo{         
+
+    .logo{
         img{
             width: 50%;
-            filter: brightness(200);
+            margin: 25px 0px 25px 0px;
         }
     }
 
     background-color: color.$darkCyan;
 
     p{
-        color: color.$paleCyan; 
+        color: color.$paleCyan;
         margin-top: 0px;
         margin-left: 16px;
     }
     .icon{
         @include mixin.flex(start);
         align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    .reference{
+        ul{
+            padding: 0;
+            li{
+                margin-bottom: 1rem;
+                a{
+                    text-decoration: none;
+                    color: color.$paleCyan;
+                }
+            }
+        }
+    }
+    .social{
+        @include mixin.flex(space-evenly);
+        margin: 2rem;
+
 
     }
+    .copy{
+        @include mixin.flex(center);
+        p{
+            font-size: small;
+
+        }
+    }
+
 }
+
 
 
 

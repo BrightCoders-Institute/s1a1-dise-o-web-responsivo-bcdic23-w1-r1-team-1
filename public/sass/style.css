@@ -12,6 +12,10 @@ h1, h2, h3, h4 {
   color: hsl(192, 100%, 9%);
 }
 
+body {
+  margin: 0px;
+}
+
 header, main, footer {
   padding: 16px;
 }
@@ -117,7 +121,7 @@ footer {
 }
 footer .logo img {
   width: 50%;
-  filter: brightness(200);
+  margin: 25px 0px 25px 0px;
 }
 footer p {
   color: hsl(193, 100%, 96%);
@@ -129,4 +133,29 @@ footer .icon {
   justify-content: start;
   align-items: center;
   align-items: flex-start;
+  margin-bottom: 1rem;
+}
+footer .reference ul {
+  padding: 0;
+}
+footer .reference ul li {
+  margin-bottom: 1rem;
+}
+footer .reference ul li a {
+  text-decoration: none;
+  color: hsl(193, 100%, 96%);
+}
+footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copy p {
+  font-size: small;
 }/*# sourceMappingURL=style.css.map */
