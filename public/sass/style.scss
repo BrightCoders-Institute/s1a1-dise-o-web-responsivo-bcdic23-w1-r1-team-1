@@ -65,6 +65,30 @@ header {
     }
 }
 
+section{    
+    padding-bottom: 10rem;
+    position: relative;
+    .last-card{
+        position: absolute;
+        bottom: -120px;
+        @include mixin.flex(center);
+        flex-direction: column  ;
+        width: 98%;
+        background-color: white;
+        border-radius: 20px;
+        //margin-bottom: 100px;
+        a {
+            @include mixin.btn(color.$pink, 40%, 45px, 12px);
+            color: color.$paleCyan;
+            margin-bottom: 4rem;
+        }
+        h3{
+            font-size: large;
+            margin-bottom: 2rem;
+    
+        }
+    }
+}
 footer{
 
     .logo{
@@ -75,6 +99,7 @@ footer{
     }
 
     background-color: color.$darkCyan;
+    padding-top: 10rem;
 
     p{
         color: color.$paleCyan;

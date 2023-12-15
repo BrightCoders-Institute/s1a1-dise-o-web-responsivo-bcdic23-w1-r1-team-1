@@ -116,8 +116,45 @@ header {
   margin-bottom: 0;
 }
 
+section {
+  padding-bottom: 10rem;
+  position: relative;
+}
+section .last-card {
+  position: absolute;
+  bottom: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 98%;
+  background-color: white;
+  border-radius: 20px;
+}
+section .last-card a {
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  height: 45px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(193, 100%, 96%);
+  margin-bottom: 4rem;
+}
+section .last-card h3 {
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
 footer {
   background-color: hsl(192, 100%, 9%);
+  padding-top: 10rem;
 }
 footer .logo img {
   width: 50%;
