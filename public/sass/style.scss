@@ -10,19 +10,32 @@ header {
     background-color: #edfbfe
 }
 
+@media (min-width: 1440px) {
+    .nav {
+        a {
+            @include mixin.btn(black, 240px, 60px, 14px);
+    
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .nav {
+        a {
+            @include mixin.btn(white, 120px, 30px, 14px);
+    
+            color: black;
+        }
+    }
+}
+
 .nav {
     @include mixin.flex(space-between);
     margin-bottom: 6rem;
-
     img {
         height: 20px;
         width: auto;
-    }
-
-    a {
-        @include mixin.btn(white, 120px, 30px, 14px);
-
-        color: black;
     }
 }
 
