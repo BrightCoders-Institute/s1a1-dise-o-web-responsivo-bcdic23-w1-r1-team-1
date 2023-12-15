@@ -1,0 +1,194 @@
+@use 'colors' as color;
+@use 'mixin';
+@use 'breakpoints' as bp;
+
+$bg-desktop: url('../../img/bg-hero-desktop.svg');
+
+@media (min-width: bp.$breakpoint-mobile) {
+    header {
+        background-image: $bg-desktop;
+        background-color: #edfbfe;
+        padding-top: 1rem;
+    }
+
+    main {
+        margin:2rem;
+        margin-top: 8rem;
+        margin-bottom: 14rem;
+    }
+
+    .container {
+        margin:2rem;
+    }
+
+    .nav {
+        @include mixin.flex(space-between);
+        margin-bottom: 6rem;
+
+        img {
+            height: 30px;
+            width: auto;
+        }
+    
+        a {
+            @include mixin.btn(white, 200px, 48px, 14px);
+    
+            color: color.$darkCyan;
+        }
+    }
+
+    .landing {
+        @include mixin.flex(space-between);
+        padding-bottom: 3rem;
+
+        .title {
+            flex: 60%;
+            margin-right: 3rem;
+        }
+    
+        h2 {
+            font-size: 45px;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        p { 
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+    
+        a {
+            @include mixin.btn(color.$pink, 50%, 50px, 16px);
+            color: color.$paleCyan;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .card {
+        @include mixin.flex(center);
+        flex-direction: row-reverse;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 3rem;
+
+        .text {
+            margin: 5rem;
+        }
+    
+        img{
+            width: 40%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            color: color.$grayishBlue;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+        h3{
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    .card2 {
+        @include mixin.flex(center);
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 3rem;
+    
+        img{
+            width: 40%;
+            margin: 5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            color: color.$grayishBlue;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+        h3{
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    footer{
+        background-color: color.$darkCyan;
+        padding-top: 7rem;
+        position: relative;
+    
+        .last-card{
+            width: 50%;
+            position: absolute;
+            right:25%;
+            top:-115px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+            @include mixin.flex(center);
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            //margin-bottom: 100px;
+            a {
+                @include mixin.btn(color.$pink, 50%, 45px, 12px);
+                color: color.$paleCyan;
+                margin-bottom: 3rem;
+            }
+            h3{
+                text-align: center;
+                font-size: x-large;
+                margin-bottom: 1.7rem;
+                margin-top:3rem;
+        
+            }
+        }
+    
+        .logo{
+            img{
+                width: 20%;
+                margin: 25px 0px 25px 0px;
+            }
+        }
+    
+        p{
+            color: color.$paleCyan;
+            margin-top: 0px;
+            margin-left: 16px;
+        }
+        .icon{
+            @include mixin.flex(start);
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .reference{
+            ul{
+                padding: 0;
+                li{
+                    margin-bottom: 1rem;
+                    a{
+                        text-decoration: none;
+                        color: color.$paleCyan;
+                    }
+                }
+            }
+        }
+        .social{
+            @include mixin.flex(space-evenly);
+            margin: 2rem;
+    
+    
+        }
+        .copy{
+            @include mixin.flex(center);
+            p{
+                font-size: small;
+    
+            }
+        }
+    
+    }
+}
