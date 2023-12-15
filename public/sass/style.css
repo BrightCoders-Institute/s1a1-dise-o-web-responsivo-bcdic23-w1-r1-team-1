@@ -56,6 +56,13 @@ header {
   }
 }
 @media (max-width: 375px) {
+  .nav {
+    margin-bottom: 6rem;
+  }
+  .nav img {
+    height: 20px;
+    width: auto;
+  }
   .nav a {
     border-radius: 2rem;
     border: none;
@@ -71,16 +78,103 @@ header {
     justify-content: center;
     color: black;
   }
+  .landing {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .landing h2, .landing p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .landing a {
+    border-radius: 2rem;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 45px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .card {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card img {
+    margin-bottom: 2rem;
+  }
+  .card h3 {
+    font-size: large;
+    margin-bottom: 0;
+  }
+  section {
+    padding-bottom: 10rem;
+  }
+  section .last-card {
+    bottom: -120px;
+    width: 98%;
+    border-radius: 20px;
+  }
+  section .last-card a {
+    border-radius: 2rem;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 45px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  section .last-card h3 {
+    font-size: large;
+    margin-bottom: 2rem;
+  }
+  footer {
+    padding-top: 10rem;
+  }
+  footer .logo img {
+    width: 50%;
+    margin: 25px 0px 25px 0px;
+  }
+  footer p {
+    margin-top: 0px;
+    margin-left: 16px;
+  }
+  footer .icon {
+    margin-bottom: 1rem;
+  }
+  footer .reference ul {
+    padding: 0;
+  }
+  footer .reference ul li {
+    margin-bottom: 1rem;
+  }
+  footer .reference ul li a {
+    text-decoration: none;
+  }
+  footer .social {
+    margin: 2rem;
+  }
+  footer .copy p {
+    font-size: small;
+  }
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6rem;
-}
-.nav img {
-  height: 20px;
-  width: auto;
 }
 
 .landing {
@@ -88,29 +182,12 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 .landing h2, .landing p {
   text-align: center;
-  line-height: 1.5;
-  margin-bottom: 2rem;
 }
 .landing a {
-  border-radius: 2rem;
-  border: none;
-  background-color: hsl(322, 100%, 66%);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: hsl(193, 100%, 96%);
-  margin-bottom: 4rem;
 }
 
 .card {
@@ -118,100 +195,46 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
-}
-.card img {
-  margin-bottom: 2rem;
 }
 .card p {
   color: hsl(208, 11%, 55%);
 }
-.card h3 {
-  font-size: large;
-  margin-bottom: 0;
-}
 
 section {
-  padding-bottom: 10rem;
   position: relative;
 }
 section .last-card {
   position: absolute;
-  bottom: -120px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 98%;
   background-color: white;
-  border-radius: 20px;
 }
 section .last-card a {
-  border-radius: 2rem;
-  border: none;
-  background-color: hsl(322, 100%, 66%);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  width: 40%;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: hsl(193, 100%, 96%);
-  margin-bottom: 4rem;
-}
-section .last-card h3 {
-  font-size: large;
-  margin-bottom: 2rem;
 }
 
 footer {
   background-color: hsl(192, 100%, 9%);
-  padding-top: 10rem;
-}
-footer .logo img {
-  width: 50%;
-  margin: 25px 0px 25px 0px;
 }
 footer p {
   color: hsl(193, 100%, 96%);
-  margin-top: 0px;
-  margin-left: 16px;
 }
 footer .icon {
   display: flex;
   justify-content: start;
   align-items: center;
   align-items: flex-start;
-  margin-bottom: 1rem;
-}
-footer .reference ul {
-  padding: 0;
-}
-footer .reference ul li {
-  margin-bottom: 1rem;
-}
-footer .reference ul li a {
-  text-decoration: none;
-  color: hsl(193, 100%, 96%);
 }
 footer .social {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2rem;
 }
 footer .copy {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer .copy p {
-  font-size: small;
 }/*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@ header {
     .nav {
         a {
             @include mixin.btn(black, 240px, 60px, 14px);
-    
+
             color: black;
         }
     }
@@ -22,132 +22,198 @@ header {
 
 @media (max-width: 375px) {
     .nav {
+        margin-bottom: 6rem;
+        img {
+            height: 20px;
+            width: auto;
+        }
         a {
             @include mixin.btn(white, 120px, 30px, 14px);
-    
+
             color: black;
         }
+    }
+    .landing {
+
+        margin-left:2rem;
+        margin-right:2rem;
+
+        h2, p {
+
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            @include mixin.btn(color.$pink, 90%, 45px, 16px);
+
+            margin-bottom: 4rem;
+        }
+    }
+    .card {
+
+
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+
+        img{
+            margin-bottom: 2rem;
+        }
+
+        h3{
+            font-size: large;
+            margin-bottom: 0;
+        }
+    }
+    section{
+        padding-bottom: 10rem;
+
+        .last-card{
+
+            bottom: -120px;
+            width: 98%;
+
+            border-radius: 20px;
+            //margin-bottom: 100px;
+            a {
+                @include mixin.btn(color.$pink, 40%, 45px, 12px);
+
+                margin-bottom: 4rem;
+            }
+            h3{
+                font-size: large;
+                margin-bottom: 2rem;
+
+            }
+        }
+    }
+    footer{
+
+        .logo{
+            img{
+                width: 50%;
+                margin: 25px 0px 25px 0px;
+            }
+        }
+
+        padding-top: 10rem;
+
+        p{
+
+            margin-top: 0px;
+            margin-left: 16px;
+        }
+        .icon{
+
+            margin-bottom: 1rem;
+        }
+        .reference{
+            ul{
+                padding: 0;
+                li{
+                    margin-bottom: 1rem;
+                    a{
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+        .social{
+
+            margin: 2rem;
+        }
+        .copy{
+            p{
+                font-size: small;
+
+            }
+        }
+
     }
 }
 
 .nav {
     @include mixin.flex(space-between);
-    margin-bottom: 6rem;
-    img {
-        height: 20px;
-        width: auto;
-    }
+
 }
 
 .landing {
     @include mixin.flex(center);
     flex-direction: column;
-    margin-left:2rem;
-    margin-right:2rem;
+
 
     h2, p {
         text-align: center;
-        line-height: 1.5;
-        margin-bottom: 2rem;
+
     }
 
     a {
-        @include mixin.btn(color.$pink, 90%, 45px, 16px);
+
         color: color.$paleCyan;
-        margin-bottom: 4rem;
+
     }
 }
 .card {
     @include mixin.flex(center);
     flex-direction: column  ;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin-bottom: 2rem;
     text-align: center;
 
-    img{
-        margin-bottom: 2rem;
-    }
+
     p{
         color: color.$grayishBlue;
     }
-    h3{
-        font-size: large;
-        margin-bottom: 0;
-    }
+
 }
 
-section{    
-    padding-bottom: 10rem;
+section{
+
     position: relative;
     .last-card{
         position: absolute;
-        bottom: -120px;
+
         @include mixin.flex(center);
         flex-direction: column  ;
-        width: 98%;
+
         background-color: white;
-        border-radius: 20px;
+
         //margin-bottom: 100px;
         a {
-            @include mixin.btn(color.$pink, 40%, 45px, 12px);
+
             color: color.$paleCyan;
-            margin-bottom: 4rem;
+
         }
-        h3{
-            font-size: large;
-            margin-bottom: 2rem;
-    
-        }
+
     }
 }
 footer{
 
-    .logo{
-        img{
-            width: 50%;
-            margin: 25px 0px 25px 0px;
-        }
-    }
+
 
     background-color: color.$darkCyan;
-    padding-top: 10rem;
+
 
     p{
         color: color.$paleCyan;
-        margin-top: 0px;
-        margin-left: 16px;
+
     }
     .icon{
         @include mixin.flex(start);
         align-items: flex-start;
-        margin-bottom: 1rem;
+
     }
-    .reference{
-        ul{
-            padding: 0;
-            li{
-                margin-bottom: 1rem;
-                a{
-                    text-decoration: none;
-                    color: color.$paleCyan;
-                }
-            }
-        }
-    }
+
     .social{
         @include mixin.flex(space-evenly);
-        margin: 2rem;
 
 
     }
     .copy{
         @include mixin.flex(center);
-        p{
-            font-size: small;
 
-        }
     }
 
 }
